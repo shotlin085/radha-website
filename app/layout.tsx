@@ -6,6 +6,8 @@ import { MotionProvider } from "@/components/motion/MotionProvider";
 import { SkipLink } from "@/components/layout/SkipLink";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+// Chat widget temporarily disabled — see ChatLauncher render below.
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { ChatLauncher } from "@/components/chat/ChatLauncher";
 
 export const metadata: Metadata = buildMetadata();
@@ -27,7 +29,7 @@ export default function RootLayout({
           <SiteHeader />
           {children}
           <SiteFooter />
-          <ChatLauncher />
+          {/* <ChatLauncher /> */}
         </MotionProvider>
       </body>
     </html>

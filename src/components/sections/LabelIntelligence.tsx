@@ -36,7 +36,7 @@ export function LabelIntelligence() {
     <section
       id="label-intelligence"
       aria-labelledby="label-intelligence-heading"
-      className="bg-surface-muted py-24 tablet:py-32"
+      className="overflow-x-hidden bg-surface-muted py-24 tablet:py-32"
     >
       <Container>
         <ScrollReveal>
@@ -50,7 +50,7 @@ export function LabelIntelligence() {
 
         {/* Below tablet: horizontal snap-scroll carousel, not a stacked
             column — feels designed for a thumb, not shrunk from desktop. */}
-        <StaggerGroup className="mt-14 flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 tablet:grid tablet:grid-cols-2 tablet:gap-6 tablet:overflow-visible tablet:pb-0 desktop:grid-cols-4">
+        <StaggerGroup className="mt-14 flex min-w-0 snap-x snap-mandatory gap-4 overflow-x-auto pb-4 tablet:grid tablet:grid-cols-2 tablet:gap-6 tablet:overflow-visible tablet:pb-0 desktop:grid-cols-4">
           {FEATURES.map((feature) => (
             <StaggerItem
               key={feature.title}

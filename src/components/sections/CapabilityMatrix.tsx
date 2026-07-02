@@ -38,7 +38,7 @@ export function CapabilityMatrix() {
     <section
       id="capability-matrix"
       aria-labelledby="capability-matrix-heading"
-      className="bg-surface py-24 tablet:py-32"
+      className="overflow-x-hidden bg-surface py-24 tablet:py-32"
     >
       <Container>
         <ScrollReveal>
@@ -51,7 +51,7 @@ export function CapabilityMatrix() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <div className="mt-14 overflow-x-auto rounded-2xl border border-ink/8">
+          <div className="mt-14 min-w-0 overflow-x-auto rounded-2xl border border-ink/8">
             <table className="w-full min-w-[560px] border-collapse text-sm">
               <caption className="sr-only">
                 RADHA capabilities available to brands, retailers, and owners

@@ -29,7 +29,7 @@ export function AudienceOverview() {
     <section
       id="audience-overview"
       aria-labelledby="audience-overview-heading"
-      className="bg-surface-muted py-24 tablet:py-32"
+      className="overflow-x-hidden bg-surface-muted py-24 tablet:py-32"
     >
       <Container>
         <ScrollReveal>
@@ -41,7 +41,7 @@ export function AudienceOverview() {
           />
         </ScrollReveal>
 
-        <StaggerGroup className="mx-auto mt-14 flex max-w-4xl snap-x snap-mandatory gap-4 overflow-x-auto pb-4 tablet:grid tablet:grid-cols-3 tablet:gap-6 tablet:overflow-visible tablet:pb-0">
+        <StaggerGroup className="mx-auto mt-14 flex min-w-0 max-w-4xl snap-x snap-mandatory gap-4 overflow-x-auto pb-4 tablet:grid tablet:grid-cols-3 tablet:gap-6 tablet:overflow-visible tablet:pb-0">
           {AUDIENCES.map((audience) => (
             <StaggerItem
               key={audience.title}
